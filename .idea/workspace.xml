@@ -11,6 +11,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="track-driver/invalid/Ruby on Rails" />
+    </ignored-facets>
+  </component>
   <component name="ProjectId" id="1lOSYuSkAQewGnCqeV0alHJU1mu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -154,6 +159,7 @@
       <updated>1607466697649</updated>
       <workItem from="1607466703341" duration="58000" />
       <workItem from="1619443332375" duration="387000" />
+      <workItem from="1619443781087" duration="244000" />
     </task>
     <servers />
   </component>
@@ -165,7 +171,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
