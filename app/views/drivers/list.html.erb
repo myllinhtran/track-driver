@@ -1,0 +1,28 @@
+<button type="button"><%= link_to 'Create New driver', { action: 'new' } %></button><br/>
+
+<br/>
+<br/>
+
+<div>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Action</th>
+    </tr>
+    <% @drivers.each do |driver| %>
+      <tr>
+        <td><%= driver.name %></td>
+        <td><%= driver.email %></td>
+        <td>
+          <%= link_to('Check-in', "/drivers/#{driver.id}/checkins") %>
+          <%= link_to 'Edit', { action: 'edit', id: driver } %>
+          <%= link_to 'Delete', driver, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+
+  <br/>
+
+</div>

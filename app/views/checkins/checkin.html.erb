@@ -1,0 +1,12 @@
+<h1><%= @driver[0].name %></h1><br/>
+
+<br/>
+
+<%= form_for :checkin do |f| %>
+  <p style="font-size: 15px">Enter the amounts of hours you worked</p> <%= f.text_field :hours%><br/>
+  <%= f.hidden_field :driver_id, value: "#{@driver[0].id}" %><br/>
+  <%= f.submit "Save" %>
+<% end %><br/>
+
+
+<%= link_to("Back", :back) %>

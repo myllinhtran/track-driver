@@ -1,0 +1,14 @@
+<h1>Create New Driver</h1>
+
+<%= form_tag :action => 'create' do %>
+  <p>
+    <label for="name">Name:</label>
+    <%= text_field 'driver', 'name' %>
+  </p>
+  <p>
+    <label for="email">Email:</label>
+    <%= text_field 'driver', 'email'%>
+  </p>
+  <%= submit_tag "Create" %>
+
+<% end -%>
